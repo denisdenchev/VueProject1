@@ -1,18 +1,21 @@
 <template>
-	<div class="flex flex-col md:flex-row bg-gray-100 my-2 ">
-		<div
-			v-for="(point, index) in points"
-			:key="index"
-			class="w-full md:w-1/3 border-b border-black border-solid md:border-none  "
-		>
-			<h3 class="text-center font-bold tracking-wide mt-5">
-				{{ point.title }}
-			</h3>
-			<p class=" font-normal text-center mb-6  ">
-				{{ point.description }}
-			</p>
-		</div>
-	</div>
+  <div class="bg-gray-100 pb-8 md:py-20">
+    <div class="w-4/5 md:container mx-auto flex flex-col md:flex-row ">
+      <div
+        v-for="(point, index) in points"
+        :key="index"
+        class="w-full md:w-1/3 mt-8 md:mt-0 md:px-4"
+      >
+        <h3 class="font-bold tracking-wide">
+          {{ point.title }}
+        </h3>
+
+        <p class="mt-4 leading-loose text-gray-500">
+          {{ point.description }}
+        </p>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>

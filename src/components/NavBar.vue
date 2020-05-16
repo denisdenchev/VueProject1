@@ -1,27 +1,43 @@
 <template>
-	<div class="navBar flex flex-row  justify-around w-screen ">
-		<div class="logo flex flex-row items-center p-0 mb-2 box-border">
-			<p class="text-black font-bold tracking-widest mr-2 text-xl">
-				KEYWORD
-			</p>
-			<span class="text-red-700 font-bold text-xl">CADDY</span>
-			<div class="navLinks flex  flex-row ml-12 text-black">
-				<p class="mr-6">Pricing</p>
-				<p>Contact</p>
-			</div>
-		</div>
-		<div class="loginGetStarted flex flex-row items-center text-black mb-2">
-			<p class="mx-16">Login</p>
-			<Button>Get Started</Button>
-		</div>
-	</div>
+  <div class="navBar flex flex-row  justify-around w-screen ">
+    <div class="logo flex flex-row items-center p-0 mb-2 box-border">
+      <BaseLogo />
+
+      <div>
+        <ul class="flex flex-row ml-12 text-gray-700">
+          <li class="mx-4">
+            Pricing
+          </li>
+          <li class="mx-4">
+            Contact
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <ul class="flex flex-row items-center mb-2">
+        <li class="mx-16">
+          Login
+        </li>
+
+        <li>
+          <ButtonPrimary>
+            Get Started
+          </ButtonPrimary>
+        </li>
+      </ul>
+    </div>
+  </div>
 </template>
 
 <script>
-import Button from "./Button";
+import ButtonPrimary from "./ButtonPrimary";
+import BaseLogo from "./BaseLogo";
+
 export default {
 	name: "Navbar",
-	components: { Button },
+	components: { BaseLogo, ButtonPrimary },
 	// props: {
 	// 	msg: String,
 	// },

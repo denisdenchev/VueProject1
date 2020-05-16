@@ -1,29 +1,26 @@
 <template>
-	<div id="jumboTron" class="pt-64 w-full mx-auto">
-		<div class="textArea flex flex-col justify-between items-center ">
-			<p class="font-semibold text-xl tracking-wider text-center">
-				Dont leave your keywords behind
-			</p>
-			<p class="w-2/5  text-center my-4  ">
-				Keyword Caddy is your one stop website to ensure your content contains
-				all the keywords you need.
-			</p>
-			<Button>Get Started</Button>
-		</div>
-		<div class="flex flex-col sm:flex-col"></div>
-		<SuperPoints />
-		<WriteAndHighlight />
-	</div>
+  <div>
+    <div class="flex flex-col w-4/5 md:w-2/3 lg:w-1/2 xl:w-2/5 mx-auto justify-between items-center">
+      <h1 class="font-bold text-3xl tracking-wider text-center">
+        {{ title }}
+      </h1>
+
+      <div class="max-w-screen-sm md:px-12 lg: my-4 leading-loose text-gray-700 text-center">
+        <slot />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import SuperPoints from "./SuperPoints";
-import Button from "./Button";
-import WriteAndHighlight from "./WriteAndHighlight";
 export default {
 	name: "Jumbotron",
-	components: { Button, SuperPoints, WriteAndHighlight },
+	
+	props: {
+		title: {
+			type: String,
+			required: true,
+		}
+	}
 };
 </script>
-
-<style></style>

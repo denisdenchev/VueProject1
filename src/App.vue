@@ -1,17 +1,22 @@
 <template>
-	<div id="app" class="bg-white sm:w-full pt-4">
-		<NavBar></NavBar>
-		<JumboTron></JumboTron>
-	</div>
+  <div
+    id="app"
+    class="bg-white w-full pt-4"
+  >
+    <header>
+      <NavBar />
+    </header>
+
+    <HomePage />
+  </div>
 </template>
 
 <script>
 import NavBar from "./components/NavBar";
-import JumboTron from "./components/JumboTron";
+import HomePage from './components/HomePage'
+
 export default {
 	name: "App",
-	components: { NavBar, JumboTron },
+	components: { NavBar, HomePage },
 };
 </script>
-
-<style></style>
