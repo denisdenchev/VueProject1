@@ -19,6 +19,7 @@
 				id="monthly"
 				class="flex flex-row justify-evenly  w-4/5 md:w-1/6 mx-auto pt-4"
 			>
+				<!-- To read docs about the toggle button visit: https://www.npmjs.com/package/vue-js-toggle-button -->
 				<p :class="{ yearly: toggle }">Monthly</p>
 				<toggle-button
 					@change="toggle = !toggle"
