@@ -9,7 +9,7 @@
 					Keyword Caddy is your one stop website to ensure your content contains
 					all the keywords you need.
 				</p>
-				<ButtonPrimary class="mt-4 px-12 py-3"> </ButtonPrimary>
+				<ButtonPrimary class="mt-4 px-12 py-3"> Get Started </ButtonPrimary>
 			</JumboTron>
 		</div>
 

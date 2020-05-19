@@ -6,9 +6,10 @@
 		<router-view>
 			<div id="homePage">
 				<HomePage />
-				<Footer></Footer>
 			</div>
 		</router-view>
+
+		<Footer></Footer>
 	</div>
 </template>
 

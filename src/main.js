@@ -10,6 +10,9 @@ import HomePage from "./containers/HomePage";
 import ContactPage from "./containers/ContactPage";
 import LoginPage from "./containers/LoginPage";
 import GetStartedPage from "./containers/GetStartedPage";
+import { ToggleButton } from "vue-js-toggle-button";
+import RegisterPage from "./containers/RegisterPage";
+import SupportPage from "./containers/SupportPage";
 
 Vue.use(VueRouter);
 
@@ -34,6 +37,14 @@ const routes = [
 		path: "/getstarted",
 		component: GetStartedPage,
 	},
+	{
+		path: "/register",
+		component: RegisterPage,
+	},
+	{
+		path: "/support",
+		component: SupportPage,
+	},
 ];
 
 const router = new VueRouter({
@@ -44,6 +55,7 @@ const router = new VueRouter({
 library.add(faUserSecret);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
+Vue.component("ToggleButton", ToggleButton);
 
 Vue.config.productionTip = false;
 
