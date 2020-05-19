@@ -17,7 +17,7 @@
 		<div class="bg-gray-200 md:py-24 py-6">
 			<div
 				id="monthly"
-				class="flex flex-row justify-evenly w-4/5 md:w-1/6 mx-auto pt-4"
+				class="flex flex-row justify-evenly  w-4/5 md:w-1/6 mx-auto pt-4"
 			>
 				<p :class="{ yearly: toggle }">Monthly</p>
 				<toggle-button
@@ -35,48 +35,48 @@
 				class="flex flex-col md:flex-row items-center justify-between md:w-2/3 md:mx-auto"
 			>
 				<div class="my-10 text-center">
-					<div class="bg-white my-2 py-2">
+					<div class="bg-white  py-2">
 						<p>Essential</p>
 						<p>from $3.74/month</p>
 					</div>
-					<div class="text-center">
+					<div class="text-center pt-4 bg-gray-300 px-2">
 						<p>Up to 15 projects</p>
 						<p>1-45 keywords per project</p>
 						<p>basic email support</p>
-					</div>
-					<router-link to="register">
-						<ButtonSecondary class="mt-6 px-12 py-3"
-							>Try for free</ButtonSecondary
-						></router-link
-					>
-				</div>
-				<div class="my-10">
-					<div class="bg-white my-2 py-2 text-center">
-						<p>Pro</p>
-						<p>from $5.99/month</p>
-					</div>
-					<div class="text-center">
-						<p>Up to 45 projects</p>
-						<p>1-99 keywords per project</p>
-						<p>priority support</p>
 						<router-link to="register">
-							<ButtonSecondary class="mt-6 px-12 py-3"
+							<ButtonSecondary class="mt-32 mb-5 px-12 py-3"
 								>Try for free</ButtonSecondary
 							></router-link
 						>
 					</div>
 				</div>
 				<div class="my-10">
-					<div class="bg-white my-2 py-2 text-center">
+					<div class="bg-white  py-2 text-center">
+						<p>Pro</p>
+						<p>from $5.99/month</p>
+					</div>
+					<div class="text-center pt-4 bg-gray-300 px-2">
+						<p>Up to 45 projects</p>
+						<p>1-99 keywords per project</p>
+						<p>priority support</p>
+						<router-link to="register">
+							<ButtonSecondary class="mt-32 px-12 py-3 mb-5"
+								>Try for free</ButtonSecondary
+							></router-link
+						>
+					</div>
+				</div>
+				<div class="my-10">
+					<div class="bg-white  py-2 text-center">
 						<p>Pro++</p>
 						<p>from $9.74/month</p>
 					</div>
-					<div class="text-center">
+					<div class="text-center bg-gray-300 pt-4 px-2">
 						<p>Up to 90 projects</p>
 						<p>1-149 keywords per project</p>
 						<p>Support within 1 working day</p>
 						<router-link to="register">
-							<ButtonSecondary class="mt-6 px-12 py-3"
+							<ButtonSecondary class="mt-32 px-12 py-3 mb-5"
 								>Try for free</ButtonSecondary
 							></router-link
 						>
