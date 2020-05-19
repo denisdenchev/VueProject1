@@ -13,6 +13,8 @@ import GetStartedPage from "./containers/GetStartedPage";
 import { ToggleButton } from "vue-js-toggle-button";
 import RegisterPage from "./containers/RegisterPage";
 import SupportPage from "./containers/SupportPage";
+import CreateAccountPage from "./containers/CreateAccountPage";
+import AccountPage from "./containers/AccountPage";
 
 Vue.use(VueRouter);
 
@@ -44,6 +46,14 @@ const routes = [
 	{
 		path: "/support",
 		component: SupportPage,
+	},
+	{
+		path: "/create-account",
+		component: CreateAccountPage,
+	},
+	{
+		path: "/account",
+		component: AccountPage,
 	},
 ];
 

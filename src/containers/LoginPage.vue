@@ -14,9 +14,18 @@
 				placeholder="Password"
 				class="shadow-md my-2 mx-3 w-11/12   rounded-md px-2 py-1 text-xl border border-solid border-black-100"
 			/>
-			<ButtonSecondary class="w-3/4  w-11/12 my-3">Login</ButtonSecondary>
+			<ButtonSecondary class="w-3/4  w-11/12 my-3">
+				<router-link to="account">
+					Login
+				</router-link>
+			</ButtonSecondary>
+
 			<p>OR</p>
-			<ButtonSecondary class="w-3/4  w-11/12 my-3">Signup</ButtonSecondary>
+			<ButtonSecondary class="w-3/4  w-11/12 my-3">
+				<router-link to="create-account">
+					Signup
+				</router-link>
+			</ButtonSecondary>
 			<p class="mb-3">Having troubles loggin in?</p>
 		</div>
 	</div>

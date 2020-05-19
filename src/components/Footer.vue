@@ -32,7 +32,7 @@
 			</div>
 		</div>
 		<div
-			class="text-white my-5 flex flex-col text-center md:flex-row md:justify-around"
+			class="text-white my-5 flex flex-col text-center md:flex-row md:justify-between w-10/12 mx-auto"
 		>
 			<BaseLogo class="my-2" />
 			<div>
